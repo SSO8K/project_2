@@ -1,0 +1,372 @@
+/* GLOABAL LAYOUT SET-UP */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: white;
+
+}
+/* LINK STYLES */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #FFA07A;
+}
+
+
+/* NAVAGATION STYLES */
+
+.name {
+    background-color: #F4F4F4;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    padding-top: 20px;
+}
+
+.main-nav {
+  width: 100%;   
+  background: #F4F4F4;
+  min-height: auto;
+  padding: 25px 10px 10px 10px;
+  text-align: center;
+}
+
+.nav {
+  justify-content: space-around;
+  font-weight: 700;   
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+.nav li {
+  padding: 10px;
+  margin: 5px; 
+  border: solid 1px white;
+  background-color: white;
+  text-transform: uppercase;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: #FFA07A;
+}
+
+
+/* SECTION STYLES */
+
+header {
+  overflow: hidden;
+  line-height: 1.5;
+  background-color: #F4F4F4;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+}
+
+.tag {
+  background-color: #F4F4F4;
+  color: grey;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 900px;    
+}
+
+#portfilio {
+    text-transform: uppercase;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+    overflow-x: hidden;
+}
+
+.port-img {
+    width: 350px;
+    height: 200px;
+}
+
+.light {
+    font-weight: normal;
+}
+
+.portfolio p {
+  text-align: center;
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;    
+}
+
+
+/* FOOTER STYLES */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  margin-top: 30px;    
+  background-color: #F4F4F4;
+}
+
+.footer-header {
+  text-transform: uppercase;    
+}
+
+.footer-p {
+    font-weight: normal;
+    color: grey;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 50px;    
+  padding: 0;
+}
+
+footer ul li {
+  display: block;
+  margin-bottom: 20px;   
+} 
+
+span {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.footer-bottom {
+  border-top: solid 1px lightgray;
+  padding: 10px;
+}
+
+.footer-name,
+.mobile-nav {
+   font-weight: bold;    
+}
+
+.footer-name {
+    float:left;
+}
+
+.mobile-nav {
+    text-transform: uppercase;
+    float:right;
+    display: block;
+    margin-right: 10px;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+
+/* CLEARFIX STYLES */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* STYLES FOR TABLETS */
+@media screen and (min-width: 768px) {
+    
+
+    
+    .nav {
+        display: inline-flex;
+    }
+    
+    .nav li {
+        background-color: #F4F4F4;
+        border: none;
+    }
+    
+    a {
+        color: black;
+    }
+    
+    .profile-image {
+        float: right;
+        margin-bottom: 50px;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+    
+    .tag {
+        margin-top: 30px;
+        text-align: left;
+    }
+    
+    .portfolio {
+      width: 100%;
+      margin: 0 auto; 
+    }
+    
+    #portfilio {
+        margin-bottom: 50px;
+    }
+    
+    .col-1,
+    .col-3,
+    .col-5 {
+        width: 46.5%;
+        float: left;
+        margin-left: 10px;
+    }
+    
+    .col-2,
+    .col-4,
+    .col-6 {
+        width: 46.5%;
+        float: right;
+        margin-right: 10px;
+    }
+     
+    .contact {
+        border-bottom: solid 1px lightgray;
+    }
+    
+    .footer-p {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    
+    .footer-name {
+        font-weight: bold;
+        display: inline-block;
+        float: left;
+    }
+    
+    .mobile-nav {
+        display: none; 
+    }
+    
+    .desktop-nav {  
+        display: inline-block;
+        background: #F4F4F4;
+        min-height: auto;
+        padding: 10px 10px 10px 10px;
+        margin: 10px;
+        text-align: right;
+        float: right;
+    }
+
+    .footer-nav li {
+        font-weight: bold;
+        text-transform: uppercase;
+        list-style-type: none;
+        margin: 0 5px;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .clear-desktop:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+/* STYLES FOR DESKTOP */  
+/* Styles for larger screens */
+@media screen and (min-width: 1024px) {
+  
+    
+    .name {
+        float: left;
+        width: 50%;
+        height: 92px;
+        padding-top: 30px;
+    }
+    
+    .main-nav {
+        float: right;
+        width: 50%;
+    }
+    
+    body {
+        background-color: #F4F4F4;
+    }
+    
+    main {
+        width: 95%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 5px;
+        padding-top: 20px;
+    }
+    
+    .col-1 {
+        width: 31%;
+        float: left;
+        overflow-x: hidden;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    
+    .col-2 {
+        width: 31%;
+        float: left;
+        overflow-x: hidden;
+        
+    }
+    
+    .col-3 {
+        width: 31%;
+        float: right;
+        overflow-x: hidden;
+        margin-right: 10px;
+    }
+    
+    .col-4 {
+        width: 31%;
+        float: left;
+        overflow-x: hidden;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    
+    .col-5 {
+        width: 31%;
+        float: left;
+        overflow-x: hidden;
+    }
+    
+    .col-6 {
+        width: 31%;
+        float: right;
+        overflow-x: hidden;
+        margin-right: 10px;
+    }
+}
